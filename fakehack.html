@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/hack.css" integrity="sha512-aKs7+Z3okpWvDV412JxbJDBGnC0i4GbFEH1VAYimNMdbOV9skiE3qyQpeWdI0jVW6HF0MsBUiewSjEqHt2M9Cg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/solarized-dark.css" integrity="sha512-UdnAnSaYx4f7nSk2twXm4Rk4GkUPyW9hk+nDwDYMjR6MQSFTuWLZpHK2iln9gepFU7RHex0pJMXLCD+j6k2j0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function showTextBox() {
+            const selectedOption = document.getElementById("cars").value;
+            const textBox = document.getElementById("textbox");
+            if (selectedOption === "other") {
+                textBox.style.display = "block";
+            } else {
+                textBox.style.display = "none";
+            }
+        }
+
+        function submitForm() {
+            // Add logic to handle form submission here
+            // For now, let's assume it redirects to step2.html
+            window.location.href = "step2.html";
+        }
+    </script>
+</head>
+<body class="solarized-dark" class="hack">
+    <h1>Hacking Portal - Localhost</h1>
+    <p>Choose type:</p>
+    <select name="cars" id="cars" onchange="showTextBox()">
+        <option value="volvo">Please Select</option>
+        <option value="google">Google</option>
+        <option value="microsoft">Microsoft</option>
+        <option value="discord">Discord</option>
+        <option value="other">Other</option>
+    </select>
+    <input type="text" id="textbox" style="display: none;" placeholder="Enter SEO Code">
+    <button onclick="submitForm()">Submit</button>
+</body>
+</html>

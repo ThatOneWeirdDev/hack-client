@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/hack.css" integrity="sha512-aKs7+Z3okpWvDV412JxbJDBGnC0i4GbFEH1VAYimNMdbOV9skiE3qyQpeWdI0jVW6HF0MsBUiewSjEqHt2M9Cg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/solarized-dark.css" integrity="sha512-UdnAnSaYx4f7nSk2twXm4Rk4GkUPyW9hk+nDwDYMjR6MQSFTuWLZpHK2iln9gepFU7RHex0pJMXLCD+j6k2j0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+                function submitForm() {
+            window.location.href = "activated.html";
+        }
+    </script>
+</head>
+<body class="solarized-dark" class="hack">
+    <h1>Details of Targeted User</h1>
+    <form class="form">
+        <fieldset class="form-group">
+          <label for="username">User ID:</label>
+          <input id="username" type="text" placeholder="user's name..." class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="email">EMAIL:</label>
+          <input id="email" type="email" placeholder="user's email..." class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="country">COUNTRY:</label>
+          <select id="country" class="form-control">
+            <option>U.S.</option>
+            <option>U.K.</option>
+          </select>
+        </fieldset>
+        <fieldset class="form-group form-textarea">
+          <label for="message">Target Code:</label>
+          <textarea id="message" rows="5" class="form-control"></textarea>
+        </fieldset>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-block submitForm" onclick="submitForm()">Submit</button>
+        </div>
+      </form>
+      <br>
+      <br>
+      <label>Need help finding a User ID?</label>
+      <a href="userid.html">Click Here</a>
+</body>
+</html>
