@@ -6,7 +6,7 @@ This is a site that allows you to trick your friends into thinking you're hackin
 You can visit the website at https://thatoneweirddev.github.io/hack-client/
 ## Screenshots
 
-![App Screenshot](/screenshots/details)
+![App Screenshot](/screenshots/Details)
 
 
 ## Feedback
